@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Market Dream Solutions</title>
+    <meta name="description" content="Comprehensive software development services including planning, design, development, deployment, and management.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        * {
+            font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-indigo-600">
+                        <i class="fas fa-code mr-2"></i>Market Dream Solutions
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="nav-link text-gray-700 hover:text-indigo-600 transition" data-i18n="nav.home">Home</a>
+                    <a href="services.html" class="nav-link text-indigo-600 font-semibold" data-i18n="nav.services">Services</a>
+                    <a href="products.html" class="nav-link text-gray-700 hover:text-indigo-600 transition" data-i18n="nav.products">Products</a>
+                    <a href="contact.html" class="nav-link text-gray-700 hover:text-indigo-600 transition" data-i18n="nav.contact">Contact</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <select id="language-selector" class="border border-gray-300 rounded-md px-3 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                        <option value="en">English</option>
+                        <option value="es">Español</option>
+                        <option value="pt">Português</option>
+                    </select>
+                    <button class="md:hidden text-gray-700" id="mobile-menu-btn">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="hidden md:hidden bg-white border-t" id="mobile-menu">
+            <div class="px-4 py-2 space-y-2">
+                <a href="index.html" class="block py-2 text-gray-700 hover:text-indigo-600" data-i18n="nav.home">Home</a>
+                <a href="services.html" class="block py-2 text-indigo-600 font-semibold" data-i18n="nav.services">Services</a>
+                <a href="products.html" class="block py-2 text-gray-700 hover:text-indigo-600" data-i18n="nav.products">Products</a>
+                <a href="contact.html" class="block py-2 text-gray-700 hover:text-indigo-600" data-i18n="nav.contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="pt-24 pb-16 bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-500 text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-20">
+            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=2069&q=80" alt="Services background" class="w-full h-full object-cover">
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4" data-i18n="services.page.title">Our Services</h1>
+            <p class="text-xl text-indigo-100 max-w-2xl mx-auto" data-i18n="services.page.subtitle">
+                Complete software solutions from concept to deployment and beyond
+            </p>
+        </div>
+    </section>
+
+    <!-- Services Detail -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="space-y-20">
+                <!-- Planning & Design -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <div class="text-5xl text-indigo-600 mb-4">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h2 class="text-3xl font-bold text-gray-900 mb-4" data-i18n="services.detail.planning.title">Planning & Design</h2>
+                        <p class="text-lg text-gray-600 mb-6" data-i18n="services.detail.planning.desc">
+                            We start by understanding your business needs and goals. Our team works closely with you to create a comprehensive plan that aligns with your vision. From user experience design to system architecture, we ensure every detail is carefully considered before development begins.
+                        </p>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i>
+                                <span data-i18n="services.detail.planning.item1">Requirements analysis and documentation</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i>
+                                <span data-i18n="services.detail.planning.item2">User experience (UX) and interface (UI) design</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i>
+                                <span data-i18n="services.detail.planning.item3">System architecture and technical specifications</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i>
+                                <span data-i18n="services.detail.planning.item4">Project timeline and resource planning</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="rounded-xl shadow-lg overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=2072&q=80" alt="Planning & Design" class="w-full h-full object-cover aspect-video">
+                    </div>
+                </div>
+
+                <!-- Custom Development -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div class="order-2 md:order-1">
+                        <div class="rounded-xl shadow-lg overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=2069&q=80" alt="Custom Development" class="w-full h-full object-cover aspect-video">
+                        </div>
+                    </div>
+                    <div class="order-1 md:order-2">
+                        <div class="text-5xl text-purple-600 mb-4">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h2 class="text-3xl font-bold text-gray-900 mb-4" data-i18n="services.detail.development.title">Custom Development</h2>
+                        <p class="text-lg text-gray-600 mb-6" data-i18n="services.detail.development.desc">
+                            Our development team specializes in creating custom software solutions tailored to your specific needs. We work with all types of software, from web applications and mobile apps to enterprise systems and specialized tools.
+                        </p>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i>
+                                <span data-i18n="services.detail.development.item1">Web and mobile application development</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i>
+                                <span data-i18n="services.detail.development.item2">Enterprise software solutions</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i>
+                                <span data-i18n="services.detail.development.item3">API development and integration</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i>
+                                <span data-i18n="services.detail.development.item4">Quality assurance and testing</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Cloud Deployment -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <div class="text-5xl text-green-600 mb-4">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <h2 class="text-3xl font-bold text-gray-900 mb-4" data-i18n="services.detail.cloud.title">Cloud Deployment</h2>
+                        <p class="text-lg text-gray-600 mb-6" data-i18n="services.detail.cloud.desc">
+                            We deploy your software to leading cloud platforms, ensuring scalability, reliability, and security. Our team handles all aspects of cloud infrastructure setup and configuration.
+                        </p>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i>
+                                <span data-i18n="services.detail.cloud.item1">Cloud infrastructure setup and configuration</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i>
+                                <span data-i18n="services.detail.cloud.item2">Scalable architecture design</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i>
+                                <span data-i18n="services.detail.cloud.item3">Security and compliance implementation</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i>
+                                <span data-i18n="services.detail.cloud.item4">Monitoring and performance optimization</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="rounded-xl shadow-lg overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Cloud Deployment" class="w-full h-full object-cover aspect-video">
+                    </div>
+                </div>
+
+                <!-- On-Premise Installation -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div class="order-2 md:order-1">
+                        <div class="rounded-xl shadow-lg overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="On-Premise Installation" class="w-full h-full object-cover aspect-video">
+                        </div>
+                    </div>
+                    <div class="order-1 md:order-2">
+                        <div class="text-5xl text-orange-600 mb-4">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h2 class="text-3xl font-bold text-gray-900 mb-4" data-i18n="services.detail.onprem.title">On-Premise Installation</h2>
+                        <p class="text-lg text-gray-600 mb-6" data-i18n="services.detail.onprem.desc">
+                            For organizations that prefer or require on-premise solutions, we provide professional installation and setup services on your own infrastructure.
+                        </p>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i>
+                                <span data-i18n="services.detail.onprem.item1">Infrastructure assessment and planning</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i>
+                                <span data-i18n="services.detail.onprem.item2">Professional installation and configuration</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i>
+                                <span data-i18n="services.detail.onprem.item3">Staff training and documentation</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i>
+                                <span data-i18n="services.detail.onprem.item4">Ongoing support and maintenance</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Product Management -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <div class="text-5xl text-red-600 mb-4">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h2 class="text-3xl font-bold text-gray-900 mb-4" data-i18n="services.detail.management.title">Product Management</h2>
+                        <p class="text-lg text-gray-600 mb-6" data-i18n="services.detail.management.desc">
+                            We provide ongoing product management services to ensure your software continues to meet your business needs and evolves with your organization.
+                        </p>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i>
+                                <span data-i18n="services.detail.management.item1">Feature updates and enhancements</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i>
+                                <span data-i18n="services.detail.management.item2">Performance monitoring and optimization</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i>
+                                <span data-i18n="services.detail.management.item3">Bug fixes and technical support</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mr-3 mt-1"></i>
+                                <span data-i18n="services.detail.management.item4">Roadmap planning and strategy</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="rounded-xl shadow-lg overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Product Management" class="w-full h-full object-cover aspect-video">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-br from-indigo-600 to-purple-600 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4" data-i18n="services.cta.title">Ready to Start Your Project?</h2>
+            <p class="text-xl mb-8 text-indigo-100 max-w-2xl mx-auto" data-i18n="services.cta.desc">
+                Let's discuss how we can help transform your business with custom software solutions
+            </p>
+            <a href="contact.html" class="inline-block bg-white text-indigo-600 px-8 py-3 rounded-lg font-semibold hover:bg-indigo-50 transition transform hover:scale-105" data-i18n="services.cta.button">
+                Get in Touch
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">
+                        <i class="fas fa-code mr-2"></i>Market Dream Solutions
+                    </h3>
+                    <p class="text-gray-400" data-i18n="footer.tagline">
+                        Transforming businesses through innovative software solutions
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4" data-i18n="footer.links.title">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="index.html" class="hover:text-white transition" data-i18n="nav.home">Home</a></li>
+                        <li><a href="services.html" class="hover:text-white transition" data-i18n="nav.services">Services</a></li>
+                        <li><a href="products.html" class="hover:text-white transition" data-i18n="nav.products">Products</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition" data-i18n="nav.contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4" data-i18n="footer.services.title">Services</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li data-i18n="services.planning.title">Planning & Design</li>
+                        <li data-i18n="services.development.title">Custom Development</li>
+                        <li data-i18n="services.cloud.title">Cloud Deployment</li>
+                        <li data-i18n="services.management.title">Product Management</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4" data-i18n="footer.contact.title">Contact</h4>
+                    <p class="text-gray-400" data-i18n="footer.contact.desc">
+                        Get in touch to discuss your software needs
+                    </p>
+                    <a href="contact.html" class="mt-4 inline-block bg-indigo-600 text-white px-6 py-2 rounded-lg hover:bg-indigo-700 transition" data-i18n="footer.contact.button">
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p data-i18n="footer.copyright">&copy; 2024 Market Dream Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+
