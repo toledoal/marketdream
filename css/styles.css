@@ -311,20 +311,22 @@ html {
 /* Card Styles - Synthwave */
 .card-synthwave {
     background: rgba(26, 26, 46, 0.8);
-    border: 1px solid rgba(157, 78, 221, 0.3);
+    border: 3px solid rgba(157, 78, 221, 0.5);
     backdrop-filter: blur(10px);
     box-shadow: 
         0 8px 32px rgba(0, 0, 0, 0.3),
-        inset 0 0 20px rgba(157, 78, 221, 0.1);
+        inset 0 0 20px rgba(157, 78, 221, 0.1),
+        0 0 15px rgba(157, 78, 221, 0.3);
     transition: all 0.3s ease;
 }
 
 .card-synthwave:hover {
-    border-color: var(--neon-purple);
+    border: 3px solid var(--neon-purple);
     box-shadow: 
-        0 0 30px rgba(157, 78, 221, 0.6),
-        0 0 60px rgba(157, 78, 221, 0.4),
-        inset 0 0 30px rgba(157, 78, 221, 0.2);
+        0 0 30px rgba(157, 78, 221, 0.8),
+        0 0 60px rgba(157, 78, 221, 0.6),
+        inset 0 0 30px rgba(157, 78, 221, 0.3),
+        0 0 20px rgba(157, 78, 221, 0.5);
     transform: translateY(-8px);
 }
 
