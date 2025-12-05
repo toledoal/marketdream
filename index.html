@@ -19,6 +19,9 @@
 
 <body class="bg-synthwave-hero relative">
     <div class="scan-line"></div>
+    <div class="scan-lines"></div>
+    <div class="color-bars"></div>
+    <div class="eighties-sun"></div>
     <!-- Navigation -->
     <nav class="nav-synthwave fixed w-full z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -63,7 +66,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="pt-16 bg-synthwave-hero text-white relative overflow-hidden">
+    <section class="pt-16 bg-synthwave-hero text-white relative overflow-hidden retro-stripes crt-effect">
         <div class="absolute inset-0 opacity-20">
             <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
                 alt="Technology background" class="w-full h-full object-cover">
@@ -74,17 +77,18 @@
                     data-i18n="hero.title">
                     Transform Your Business with Custom Software Solutions
                 </h1>
-                <p class="text-xl md:text-2xl mb-8 text-purple-200 max-w-3xl mx-auto text-enhanced" data-i18n="hero.subtitle">
+                <p class="text-xl md:text-2xl mb-8 text-purple-200 max-w-3xl mx-auto text-enhanced"
+                    data-i18n="hero.subtitle">
                     From planning to deployment, we deliver end-to-end software solutions tailored to your needs
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
                     <a href="services.html"
-                        class="btn-neon px-8 py-3 rounded-lg font-semibold transition transform hover:scale-105 relative z-10"
+                        class="btn-80s btn-neon px-8 py-3 rounded-lg font-semibold transition transform hover:scale-105 relative z-10"
                         data-i18n="hero.cta.services">
                         Our Services
                     </a>
                     <a href="contact.html"
-                        class="btn-neon px-8 py-3 rounded-lg font-semibold transition transform hover:scale-105 relative z-10"
+                        class="btn-80s btn-neon px-8 py-3 rounded-lg font-semibold transition transform hover:scale-105 relative z-10"
                         data-i18n="hero.cta.contact">
                         Get Started
                     </a>
@@ -97,7 +101,8 @@
     <section class="py-20 bg-section-dark relative z-10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 relative z-10">
-                <h2 class="text-3xl md:text-4xl font-bold gradient-text-synthwave mb-4 text-enhanced" data-i18n="services.title">
+                <h2 class="text-3xl md:text-4xl font-bold gradient-text-synthwave mb-4 text-enhanced"
+                    data-i18n="services.title">
                     Comprehensive Software Solutions
                 </h2>
                 <p class="text-xl text-purple-200 max-w-2xl mx-auto text-enhanced" data-i18n="services.subtitle">
@@ -115,7 +120,8 @@
                         <div class="text-4xl text-purple-400 mb-4">
                             <i class="fas fa-lightbulb"></i>
                         </div>
-                        <h3 class="text-xl font-bold text-purple-300 mb-3 text-enhanced" data-i18n="services.planning.title">Planning
+                        <h3 class="text-xl font-bold text-purple-300 mb-3 text-enhanced"
+                            data-i18n="services.planning.title">Planning
                             & Design</h3>
                         <p class="text-purple-200 text-enhanced" data-i18n="services.planning.desc">
                             Strategic planning and innovative design to bring your vision to life
@@ -132,7 +138,8 @@
                         <div class="text-4xl text-purple-600 mb-4">
                             <i class="fas fa-code"></i>
                         </div>
-                        <h3 class="text-xl font-bold text-purple-300 mb-3 text-enhanced" data-i18n="services.development.title">Custom
+                        <h3 class="text-xl font-bold text-purple-300 mb-3 text-enhanced"
+                            data-i18n="services.development.title">Custom
                             Development</h3>
                         <p class="text-purple-200 text-enhanced" data-i18n="services.development.desc">
                             Tailored software solutions built to your exact specifications
@@ -230,7 +237,8 @@
                                 </div>
                             </div>
                             <div class="ml-4">
-                                <h3 class="text-lg font-semibold text-purple-300 text-enhanced" data-i18n="why.versatile.title">
+                                <h3 class="text-lg font-semibold text-purple-300 text-enhanced"
+                                    data-i18n="why.versatile.title">
                                     Versatile Solutions</h3>
                                 <p class="text-purple-200 text-enhanced" data-i18n="why.versatile.desc">
                                     We work with all types of software, from web applications to enterprise systems
@@ -245,7 +253,8 @@
                                 </div>
                             </div>
                             <div class="ml-4">
-                                <h3 class="text-lg font-semibold text-purple-300 text-enhanced" data-i18n="why.endtoend.title">
+                                <h3 class="text-lg font-semibold text-purple-300 text-enhanced"
+                                    data-i18n="why.endtoend.title">
                                     End-to-End Service</h3>
                                 <p class="text-purple-200 text-enhanced" data-i18n="why.endtoend.desc">
                                     From initial planning to final deployment and ongoing management
@@ -260,7 +269,8 @@
                                 </div>
                             </div>
                             <div class="ml-4">
-                                <h3 class="text-lg font-semibold text-purple-300 text-enhanced" data-i18n="why.flexible.title">
+                                <h3 class="text-lg font-semibold text-purple-300 text-enhanced"
+                                    data-i18n="why.flexible.title">
                                     Flexible Deployment</h3>
                                 <p class="text-purple-200 text-enhanced" data-i18n="why.flexible.desc">
                                     Cloud or on-premise, we adapt to your infrastructure needs
@@ -316,7 +326,8 @@
                     </ul>
                 </div>
                 <div>
-                    <h4 class="font-semibold mb-4 text-purple-300 text-enhanced" data-i18n="footer.services.title">Services</h4>
+                    <h4 class="font-semibold mb-4 text-purple-300 text-enhanced" data-i18n="footer.services.title">
+                        Services</h4>
                     <ul class="space-y-2 text-purple-300 text-enhanced">
                         <li data-i18n="services.planning.title">Planning & Design</li>
                         <li data-i18n="services.development.title">Custom Development</li>

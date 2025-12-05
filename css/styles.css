@@ -71,7 +71,7 @@ h1, h2, h3, h4, h5, h6 {
     --grid-color: rgba(157, 78, 221, 0.1);
 }
 
-/* Grid Background Pattern */
+/* Grid Background Pattern - More visible 80s style */
 body::before {
     content: '';
     position: fixed;
@@ -80,12 +80,32 @@ body::before {
     width: 100%;
     height: 100%;
     background-image: 
-        linear-gradient(rgba(157, 78, 221, 0.1) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(157, 78, 221, 0.1) 1px, transparent 1px);
-    background-size: 50px 50px;
+        linear-gradient(rgba(157, 78, 221, 0.2) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(157, 78, 221, 0.2) 1px, transparent 1px);
+    background-size: 40px 40px;
     pointer-events: none;
     z-index: 0;
-    opacity: 0.3;
+    opacity: 0.5;
+}
+
+/* 80s Horizon Lines Effect */
+body::after {
+    content: '';
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(
+        to top,
+        rgba(255, 0, 255, 0.1) 0%,
+        rgba(157, 78, 221, 0.15) 20%,
+        rgba(0, 245, 255, 0.1) 40%,
+        transparent 60%
+    );
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.6;
 }
 
 /* Smooth scrolling */
@@ -184,21 +204,41 @@ html {
     animation: pulseGlow 2s ease-in-out infinite;
 }
 
-/* Scan line effect */
+/* Scan line effect - More 80s VHS style */
 .scan-line {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 2px;
-    background: linear-gradient(90deg, transparent, var(--neon-cyan), transparent);
-    animation: scanLine 3s linear infinite;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, var(--neon-cyan), var(--neon-pink), transparent);
+    animation: scanLine 2s linear infinite;
     pointer-events: none;
     z-index: 9999;
-    opacity: 0.5;
+    opacity: 0.7;
+    box-shadow: 0 0 10px var(--neon-cyan);
 }
 
-/* Custom gradient backgrounds - Synthwave style */
+/* Multiple scan lines for VHS effect */
+.scan-lines {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9998;
+    opacity: 0.1;
+    background-image: repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 2px,
+        rgba(0, 245, 255, 0.1) 2px,
+        rgba(0, 245, 255, 0.1) 4px
+    );
+}
+
+/* Custom gradient backgrounds - Synthwave style with 80s horizon */
 .bg-synthwave-hero {
     background: linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 25%, #16213e 50%, #0f3460 75%, #0a0a0f 100%);
     position: relative;
@@ -214,7 +254,17 @@ html {
     background: 
         radial-gradient(circle at 20% 50%, rgba(157, 78, 221, 0.3) 0%, transparent 50%),
         radial-gradient(circle at 80% 80%, rgba(255, 0, 255, 0.3) 0%, transparent 50%),
-        radial-gradient(circle at 40% 20%, rgba(0, 245, 255, 0.2) 0%, transparent 50%);
+        radial-gradient(circle at 40% 20%, rgba(0, 245, 255, 0.2) 0%, transparent 50%),
+        /* 80s Horizon Lines */
+        linear-gradient(
+            to bottom,
+            transparent 0%,
+            transparent 40%,
+            rgba(255, 0, 255, 0.1) 50%,
+            rgba(157, 78, 221, 0.2) 60%,
+            rgba(0, 245, 255, 0.15) 70%,
+            transparent 80%
+        );
     pointer-events: none;
 }
 
@@ -472,4 +522,199 @@ select:focus {
     pointer-events: none;
     z-index: 1;
     opacity: 0.3;
+}
+
+/* 80s Retro Effects */
+/* Diagonal stripes pattern */
+.retro-stripes {
+    position: relative;
+    overflow: hidden;
+}
+
+.retro-stripes::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 10px,
+        rgba(157, 78, 221, 0.05) 10px,
+        rgba(157, 78, 221, 0.05) 20px
+    );
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* 80s Sun/Horizon effect */
+.eighties-sun {
+    position: absolute;
+    top: -100px;
+    right: -100px;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(
+        circle,
+        rgba(255, 0, 255, 0.2) 0%,
+        rgba(157, 78, 221, 0.15) 30%,
+        rgba(0, 245, 255, 0.1) 50%,
+        transparent 70%
+    );
+    border-radius: 50%;
+    filter: blur(40px);
+    pointer-events: none;
+    z-index: 0;
+    animation: pulseSun 4s ease-in-out infinite;
+}
+
+@keyframes pulseSun {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 0.6;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+}
+
+/* Geometric shapes - 80s style */
+.geometric-shape {
+    position: absolute;
+    border: 2px solid var(--neon-purple);
+    box-shadow: 0 0 20px rgba(157, 78, 221, 0.5);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 50px solid var(--neon-purple);
+    filter: drop-shadow(0 0 10px var(--neon-purple));
+}
+
+/* 80s Glitch effect */
+@keyframes glitch {
+    0% {
+        transform: translate(0);
+    }
+    20% {
+        transform: translate(-2px, 2px);
+    }
+    40% {
+        transform: translate(-2px, -2px);
+    }
+    60% {
+        transform: translate(2px, 2px);
+    }
+    80% {
+        transform: translate(2px, -2px);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+
+.glitch-effect {
+    animation: glitch 0.3s infinite;
+}
+
+/* 80s Color Bars */
+.color-bars {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(
+        to right,
+        #ff0000 0%,
+        #ff7f00 14.28%,
+        #ffff00 28.56%,
+        #00ff00 42.84%,
+        #0000ff 57.12%,
+        #4b0082 71.4%,
+        #9400d3 85.68%,
+        #ff0000 100%
+    );
+    opacity: 0.3;
+    z-index: 9997;
+}
+
+/* 80s Retro Button Style */
+.btn-80s {
+    background: linear-gradient(135deg, var(--neon-purple) 0%, var(--neon-pink) 100%);
+    border: 3px solid var(--neon-cyan);
+    box-shadow: 
+        0 0 20px rgba(157, 78, 221, 0.8),
+        0 0 40px rgba(157, 78, 221, 0.6),
+        inset 0 0 20px rgba(0, 245, 255, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-80s::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        45deg,
+        transparent 30%,
+        rgba(255, 255, 255, 0.3) 50%,
+        transparent 70%
+    );
+    animation: shine 3s infinite;
+}
+
+@keyframes shine {
+    0% {
+        transform: translateX(-100%) translateY(-100%) rotate(45deg);
+    }
+    100% {
+        transform: translateX(100%) translateY(100%) rotate(45deg);
+    }
+}
+
+/* 80s Text Outline */
+.text-80s-outline {
+    -webkit-text-stroke: 2px var(--neon-purple);
+    text-stroke: 2px var(--neon-purple);
+    color: transparent;
+    text-shadow: 
+        0 0 10px var(--neon-purple),
+        0 0 20px var(--neon-purple),
+        0 0 30px var(--neon-purple);
+}
+
+/* Retro CRT Monitor Effect */
+.crt-effect {
+    position: relative;
+}
+
+.crt-effect::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        repeating-linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.15) 0px,
+            rgba(0, 0, 0, 0.15) 1px,
+            transparent 1px,
+            transparent 2px
+        );
+    pointer-events: none;
+    z-index: 9999;
 }
