@@ -12,12 +12,34 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background: #0a0a0f;
-    color: #e0e0e0;
+    color: #ffffff;
+    text-rendering: optimizeLegibility;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Orbitron', sans-serif;
     font-weight: 700;
+    text-rendering: optimizeLegibility;
+    letter-spacing: 0.5px;
+}
+
+/* Enhanced text visibility */
+.text-enhanced {
+    text-shadow: 
+        0 0 5px rgba(255, 255, 255, 0.5),
+        0 2px 4px rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+}
+
+.text-purple-200 {
+    color: #e9d5ff;
+    text-shadow: 0 0 10px rgba(157, 78, 221, 0.3);
+}
+
+.text-purple-300 {
+    color: #d8b4fe;
+    text-shadow: 0 0 10px rgba(157, 78, 221, 0.4);
+    font-weight: 600;
 }
 
 /* Synthwave Color Palette */
@@ -55,13 +77,19 @@ html {
     background: var(--dark-bg);
 }
 
-/* Neon Glow Effects */
+/* Neon Glow Effects - Enhanced for better visibility */
 .neon-glow {
     text-shadow: 
+        0 0 5px rgba(255, 255, 255, 0.8),
         0 0 10px var(--neon-purple),
         0 0 20px var(--neon-purple),
         0 0 30px var(--neon-purple),
-        0 0 40px var(--neon-purple);
+        0 0 40px var(--neon-purple),
+        0 0 60px var(--neon-purple);
+    color: #ffffff;
+    font-weight: 700;
+    -webkit-text-stroke: 0.5px rgba(157, 78, 221, 0.5);
+    text-stroke: 0.5px rgba(157, 78, 221, 0.5);
 }
 
 .neon-glow-pink {
@@ -306,7 +334,7 @@ select:focus {
         inset 0 0 10px rgba(157, 78, 221, 0.1);
 }
 
-/* Gradient text - Synthwave */
+/* Gradient text - Synthwave - Enhanced for better visibility */
 .gradient-text-synthwave {
     background: linear-gradient(135deg, var(--neon-cyan) 0%, var(--neon-purple) 50%, var(--neon-pink) 100%);
     -webkit-background-clip: text;
@@ -314,6 +342,11 @@ select:focus {
     background-clip: text;
     animation: gradientShift 3s ease infinite;
     background-size: 200% 200%;
+    filter: drop-shadow(0 0 8px rgba(157, 78, 221, 0.8)) 
+            drop-shadow(0 0 16px rgba(157, 78, 221, 0.6))
+            drop-shadow(0 0 24px rgba(157, 78, 221, 0.4));
+    font-weight: 800;
+    letter-spacing: 0.5px;
 }
 
 @keyframes gradientShift {
