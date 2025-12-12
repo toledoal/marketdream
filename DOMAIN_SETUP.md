@@ -207,3 +207,4 @@ Si tienes problemas:
 
 **Última actualización**: Después de configurar, espera 24-48 horas para la propagación completa del DNS.
 
+
