@@ -43,31 +43,28 @@
             </div>
         </div>
         <!-- Mobile Menu -->
-        <div class="hidden md:hidden bg-gray-900 border-t border-gray-200" id="mobile-menu">
+        <div class="hidden md:hidden bg-white border-t border-gray-200" id="mobile-menu">
             <div class="px-4 py-2 space-y-2">
-                <a href="index.html" class="block py-2 text-gray-700 hover:text-gray-900" data-i18n="nav.home">Home</a>
-                <a href="services.html" class="block py-2 text-gray-700 hover:text-gray-900" data-i18n="nav.services">Services</a>
-                <a href="products.html" class="block py-2 text-gray-700 hover:text-gray-900" data-i18n="nav.products">Products</a>
-                <a href="contact.html" class="block py-2 text-gray-700 hover:text-gray-900" data-i18n="nav.contact">Contact</a>
+                <a href="index.html" class="block py-2 text-gray-700 hover:text-blue-600 transition" data-i18n="nav.home">Home</a>
+                <a href="services.html" class="block py-2 text-gray-700 hover:text-blue-600 transition" data-i18n="nav.services">Services</a>
+                <a href="products.html" class="block py-2 text-gray-700 hover:text-blue-600 transition" data-i18n="nav.products">Products</a>
+                <a href="contact.html" class="block py-2 text-gray-700 hover:text-blue-600 transition" data-i18n="nav.contact">Contact</a>
             </div>
         </div>
     </nav>
 
     <!-- Page Header -->
-    <section class="pt-24 pb-16 bg-white text-gray-900 relative overflow-hidden ">
-        <div class="absolute inset-0 opacity-20">
-            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Contact background" class="w-full h-full object-cover">
-        </div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-            <h1 class="text-4xl md:text-5xl font-bold mb-4 gradient-text " data-i18n="contact.page.title">Get in Touch</h1>
-            <p class="text-xl text-gray-600 max-w-2xl mx-auto " data-i18n="contact.page.subtitle">
+    <section class="pt-24 bg-hero section-padding">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 gradient-text text-gray-900" data-i18n="contact.page.title">Get in Touch</h1>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto" data-i18n="contact.page.subtitle">
                 Let's discuss how we can help transform your business with custom software solutions
             </p>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section class="py-20 bg-section-light relative z-10">
+    <section class="section-padding bg-section-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
                 <!-- Contact Form -->
@@ -101,7 +98,7 @@
                             <label for="message" class="block text-sm font-medium text-gray-900 mb-2 " data-i18n="contact.form.message">Message</label>
                             <textarea id="message" name="message" rows="6" required class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-gray-200"></textarea>
                         </div>
-                        <button type="submit" class="btn-80s btn-primary w-full px-8 py-3 rounded-lg font-semibold transition transform hover:scale-105 relative z-10" data-i18n="contact.form.submit">
+                        <button type="submit" class="btn-primary w-full px-8 py-3 rounded-lg font-semibold transition transform hover:scale-105" data-i18n="contact.form.submit">
                             Send Message
                         </button>
                     </form>
@@ -114,7 +111,7 @@
                     <div class="space-y-6 mb-8">
                         <div class="flex items-start">
                             <div class="flex-shrink-0">
-                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-gray-900 ">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white ">
                                     <i class="fas fa-envelope text-xl"></i>
                                 </div>
                             </div>
@@ -125,7 +122,7 @@
                         </div>
                         <div class="flex items-start">
                             <div class="flex-shrink-0">
-                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-gray-900 ">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white ">
                                     <i class="fas fa-phone text-xl"></i>
                                 </div>
                             </div>
@@ -136,7 +133,7 @@
                         </div>
                         <div class="flex items-start">
                             <div class="flex-shrink-0">
-                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-gray-900 ">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white ">
                                     <i class="fas fa-clock text-xl"></i>
                                 </div>
                             </div>
@@ -155,15 +152,15 @@
                                 <span data-i18n="contact.why.item1">Free consultation on your software needs</span>
                             </li>
                             <li class="flex items-start">
-                                <i class="fas fa-check-circle text-indigo-600 mr-3 mt-1"></i>
+                                <i class="fas fa-check-circle icon-primary mr-3 mt-1"></i>
                                 <span data-i18n="contact.why.item2">Customized solutions for your business</span>
                             </li>
                             <li class="flex items-start">
-                                <i class="fas fa-check-circle text-indigo-600 mr-3 mt-1"></i>
+                                <i class="fas fa-check-circle icon-primary mr-3 mt-1"></i>
                                 <span data-i18n="contact.why.item3">Flexible licensing options</span>
                             </li>
                             <li class="flex items-start">
-                                <i class="fas fa-check-circle text-indigo-600 mr-3 mt-1"></i>
+                                <i class="fas fa-check-circle icon-primary mr-3 mt-1"></i>
                                 <span data-i18n="contact.why.item4">Expert guidance from planning to deployment</span>
                             </li>
                         </ul>
@@ -174,20 +171,20 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer text-gray-900 py-12 relative z-10">
+    <footer class="footer py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div>
                     <div class="flex items-center mb-4">
                         <img src="images/logo.svg" alt="Market Dream Solutions" class="h-8 w-auto">
                     </div>
-                    <p class="text-gray-900" data-i18n="footer.tagline">
+                    <p class="text-gray-400" data-i18n="footer.tagline">
                         Transforming businesses through innovative software solutions
                     </p>
                 </div>
                 <div>
-                    <h4 class="font-semibold mb-4 text-gray-900" data-i18n="footer.links.title">Quick Links</h4>
-                    <ul class="space-y-2 text-gray-900">
+                    <h4 class="font-semibold mb-4 text-white" data-i18n="footer.links.title">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
                         <li><a href="index.html" class="hover:text-gray-600 transition" data-i18n="nav.home">Home</a></li>
                         <li><a href="services.html" class="hover:text-gray-600 transition" data-i18n="nav.services">Services</a></li>
                         <li><a href="products.html" class="hover:text-gray-600 transition" data-i18n="nav.products">Products</a></li>
@@ -195,8 +192,8 @@
                     </ul>
                 </div>
                 <div>
-                    <h4 class="font-semibold mb-4 text-gray-900" data-i18n="footer.services.title">Services</h4>
-                    <ul class="space-y-2 text-gray-900">
+                    <h4 class="font-semibold mb-4 text-white" data-i18n="footer.services.title">Services</h4>
+                    <ul class="space-y-2 text-gray-400">
                         <li data-i18n="services.planning.title">Planning & Design</li>
                         <li data-i18n="services.development.title">Custom Development</li>
                         <li data-i18n="services.cloud.title">Cloud Deployment</li>
@@ -204,8 +201,8 @@
                     </ul>
                 </div>
                 <div>
-                    <h4 class="font-semibold mb-4 text-gray-900" data-i18n="footer.contact.title">Contact</h4>
-                    <p class="text-gray-900" data-i18n="footer.contact.desc">
+                    <h4 class="font-semibold mb-4 text-white" data-i18n="footer.contact.title">Contact</h4>
+                    <p class="text-gray-400" data-i18n="footer.contact.desc">
                         Get in touch to discuss your software needs
                     </p>
                     <a href="contact.html" class="btn-primary mt-4 inline-block px-6 py-2 rounded-lg transition" data-i18n="footer.contact.button">
@@ -213,7 +210,7 @@
                     </a>
                 </div>
             </div>
-            <div class="border-t border-gray-200 mt-8 pt-8 text-center text-gray-900">
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
                 <p data-i18n="footer.copyright">&copy; 2024 Market Dream Solutions. All rights reserved.</p>
             </div>
         </div>
